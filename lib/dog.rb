@@ -22,6 +22,8 @@ end
 #   returns a dog that matches the name from the DB
 # .find_by_id
 #   returns a dog that matches the id from the DB
+# .all
+#   returns all Dog instances from DB
 
 # has not:
 # .create_table
@@ -30,3 +32,12 @@ end
 #   drops the dogs table from the database
 # .new_from_db
 #   creates an instance with corresponding attribute values
+
+# If you want to try the ActiveRecord class using irb, uncomment the following lines
+# DB = ActiveRecord::Base.establish_connection(
+#   :adapter => "sqlite3",
+#   :database => "./db/dogs.db"
+# )
+# DB = ActiveRecord::Base.connection
+# binding.pry 
+# 0
